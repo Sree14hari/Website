@@ -2,70 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Font */
 body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* Background texture */
 .crumpled-paper {
   background-image: url('/images/image.png');
-  background-color: #F8F4E8;
+  background-color: hsl(var(--background));
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* =========================
+   Theme Variables
+   ========================= */
 @layer base {
   :root {
-    --background: 40 33% 96%;
+    --background: 40 33% 96%; /* light beige */
     --foreground: 20 14.3% 4.1%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 0 0% 98%;
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 0 0% 98%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 20 14.3% 4.1%;
+
     --primary: 45 93% 47%;
     --primary-foreground: 20 14.3% 4.1%;
+
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 20 14.3% 4.1%;
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
+
     --accent: 45 93% 47%;
     --accent-foreground: 20 14.3% 4.1%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
+
     --border: 20 14.3% 4.1%;
     --input: 240 5.9% 90%;
     --ring: 45 93% 47%;
-    --radius: 0rem;
+
+    --radius: 0rem; /* square corners */
   }
 
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 98%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 20 14.3% 4.1%;
+
+    --card: 20 14.3% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 20 14.3% 10%;
     --popover-foreground: 0 0% 98%;
+
     --primary: 45 93% 47%;
     --primary-foreground: 20 14.3% 4.1%;
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
+
     --accent: 45 93% 47%;
     --accent-foreground: 20 14.3% 4.1%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 45 93% 47%;
   }
 }
 
+/* =========================
+   Base Styles
+   ========================= */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-[#F8F4E8] text-foreground;
+    @apply bg-background text-foreground;
   }
+
   section {
     @apply py-16 md:py-24;
   }
+}
+
+/* =========================
+   Marquee Animations
+   ========================= */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }
