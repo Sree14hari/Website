@@ -1,0 +1,88 @@
+{
+  "placeholderImages": [
+    {
+      "id": "about-us",
+      "description": "Students collaborating on a project",
+      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageHint": "students collaborating"
+    },
+    {
+      "id": "event-1",
+      "description": "Workshop on web development",
+      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageHint": "workshop code"
+    },
+    {
+      "id": "event-2",
+      "description": "Hackathon event in progress",
+      "imageUrl": "https://picsum.photos/seed/4/600/400",
+      "imageHint": "hackathon event"
+    },
+    {
+      "id": "event-3",
+      "description": "Guest speaker giving a tech talk",
+      "imageUrl": "https://picsum.photos/seed/5/600/400",
+      "imageHint": "speaker presentation"
+    },
+    {
+      "id": "event-4",
+      "description": "Team building activity",
+      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageHint": "team building"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of a mobile application",
+      "imageUrl": "https://picsum.photos/seed/7/600/400",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "project-2",
+      "description": "Web dashboard analytics interface",
+      "imageUrl": "https://picsum.photos/seed/8/600/400",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "project-3",
+      "description": "Robotics project with hardware components",
+      "imageUrl": "https://picsum.photos/seed/9/600/400",
+      "imageHint": "robotics hardware"
+    },
+    {
+      "id": "project-4",
+      "description": "Data visualization chart",
+      "imageUrl": "https://picsum.photos/seed/10/600/400",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "team-faculty-1",
+      "description": "Profile picture of a faculty coordinator",
+      "imageUrl": "https://picsum.photos/seed/11/200/200",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-student-1",
+      "description": "Profile picture of a student lead",
+      "imageUrl": "https://picsum.photos/seed/12/200/200",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "team-student-2",
+      "description": "Profile picture of a student lead",
+      "imageUrl": "https://picsum.photos/seed/13/200/200",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "team-student-3",
+      "description": "Profile picture of a student lead",
+      "imageUrl": "https://picsum.photos/seed/14/200/200",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "team-student-4",
+      "description": "Profile picture of a student lead",
+      "imageUrl": "https://picsum.photos/seed/15/200/200",
+      "imageHint": "student portrait"
+    }
+  ]
+}
