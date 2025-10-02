@@ -41,12 +41,8 @@ export default function Header() {
       )}
     >
       <div className="container flex h-24 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo.png" alt="TinkerHub Logo" width={60} height={40} />
-          <div>
-            <span className="block font-black text-2xl leading-none">TinkerHub</span>
-            <span className="block font-bold text-sm leading-none text-foreground/80">SBCE</span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image src="/images/nav.png" alt="TinkerHub Logo" width={150} height={40} />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
